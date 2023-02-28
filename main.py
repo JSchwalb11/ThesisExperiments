@@ -12,9 +12,9 @@ def run_workflow(rcfg_dir=Path("./run_configs")):
         subprocess.run(["yolo", c])
 
 if __name__ == '__main__':
-    create_run_configs()
-    #subprocess.run("clearml-init") # init logging
-    #run_workflow()
+    #create_run_configs()
+    subprocess.run("clearml-init") # init logging
+    run_workflow()
 
 
 

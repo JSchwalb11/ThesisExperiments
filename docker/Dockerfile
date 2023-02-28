@@ -1,6 +1,7 @@
 FROM yolov8_training:latest
-RUN mkdir -p /datasets
-COPY ../datasets /datasets/
+RUN pip install -r requirements.txt
+#RUN mkdir -p /datasets
+#COPY ../datasets /datasets/
 
 #RUN apt-get update && apt-get install -y net-tools
 #ADD . /code
