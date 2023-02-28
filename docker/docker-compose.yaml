@@ -4,10 +4,10 @@ services:
   yolov8_training:
     container_name: yolov8_training
     build: ./
-    image: yolov8_training
+    image: yolov8_training:v2
     volumes:
       - ../:/code/
-      - ../datasets:/datasets
+      # - ../datasets:/datasets
       - ../:/data/
 
     ipc: host
